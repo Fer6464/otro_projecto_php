@@ -53,7 +53,7 @@
             <button style="background-color:#106cfc; color: white; padding: 10px 20px; border: none; border-radius: 5px;" onclick="history.back()">Volver al inicio</button>
         </div>
         <div class="col-10">
-            <form action = "{{route('example.store')}}" method="post">
+            <form action = "{{route('solicitud.store')}}" method="post">
                 @csrf
                 @method('POST')
                 <div class="input-group mb-3">

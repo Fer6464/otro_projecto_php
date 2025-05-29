@@ -105,7 +105,7 @@
                                 <td>{{ $solicitud->observaciones }}</td>
                                 <td>{{ $solicitud->usuario_externo ? 'Sí' : 'No'  }}</td>
                                 <td>{{ $solicitud->created_at }}</td>
-                                <td><a href="{{ url('example/' .$solicitud->id . '/edit') }}">
+                                <td><a href="{{ url('solicitud/' .$solicitud->id . '/edit') }}">
                                         <button style="background-color:#106cfc; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Modificar</button> 
                                     </a>
                                 </td>

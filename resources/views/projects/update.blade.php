@@ -54,7 +54,7 @@
         </div>
         <div class="col-sm-10">
             <p style="font-size: 25px;">Modificar Datos</p>
-            <form action="{{route('example.update', $ejemplo->id)}}" method="post">
+            <form action="{{route('solicitud.update', $ejemplo->id)}}" method="post">
                 @csrf
                 @method('PUT')
                 <div class="input-group mb-3">

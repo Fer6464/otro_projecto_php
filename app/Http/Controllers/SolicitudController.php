@@ -61,7 +61,7 @@ class SolicitudController extends Controller
      * @param  \App\Models\Solicitudes  $solicitudes
      * @return \Illuminate\Http\Response
      */
-    public function edit(Solicitudes $solicitudes)
+    public function edit($id)
     {
         $solicitud=Solicitudes::find($id);
         return view('projects/update', compact('solicitud'));
@@ -74,7 +74,7 @@ class SolicitudController extends Controller
      * @param  \App\Models\Solicitudes  $solicitudes
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Solicitudes $solicitudes)
+    public function update(Request $request, $id)
     {
         $solicitud=Solicitudes::find($id);
         $solicitud->update($request->all());
@@ -88,7 +88,7 @@ class SolicitudController extends Controller
      * @param  \App\Models\Solicitudes  $solicitudes
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Solicitudes $solicitudes)
+    public function destroy(Request $request, $id)
     {
         $solicitud=Solicitudes::find($id);
         $solicitud->destroy($request->all());
