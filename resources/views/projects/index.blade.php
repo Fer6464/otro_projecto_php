@@ -51,7 +51,7 @@
    <div class="row">
         <div class="col-sm-2">
             <a href="solicitud/create">
-                <button style="background-color:#106cfc; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Insertar ejemplo</button> 
+                <button style="background-color:#106cfc; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Insertar solicitud</button> 
             </a>
         </div>
         <div class="col-10">     

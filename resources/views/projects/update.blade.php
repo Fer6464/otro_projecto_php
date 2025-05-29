@@ -54,20 +54,20 @@
         </div>
         <div class="col-sm-10">
             <p style="font-size: 25px;">Modificar Datos</p>
-            <form action="{{route('solicitud.update', $ejemplo->id)}}" method="post">
+            <form action="{{route('solicitud.update', $solicitud->id)}}" method="post">
                 @csrf
                 @method('PUT')
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Id</span>
-                    <input type="text" class="form-control" id="id" name="id" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{$ejemplo->id}}" readonly></input>
+                    <input type="text" class="form-control" id="id" name="id" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{$solicitud->id}}" readonly></input>
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id ="inputGroup-sizing-default">Nombre</span>
-                    <input class="form-control" id="nombre" name="nombre" aria-label="With textarea" value="{{$ejemplo->nombre}}"></input>
+                    <input class="form-control" id="nombre" name="nombre" aria-label="With textarea" value="{{$solicitud->nombre}}"></input>
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">Descripcion</span>
-                    <textarea class="form-control" id="descripcion" name="descripcion" aria-label="With textarea" value="{{$ejemplo->descripcion}}">{{$ejemplo->descripcion}}</textarea>
+                    <textarea class="form-control" id="descripcion" name="descripcion" aria-label="With textarea" value="{{$solicitud->descripcion}}">{{$solicitud->descripcion}}</textarea>
                 </div>
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="area">Area</label>
@@ -104,13 +104,13 @@
                 <button style="background-color:#106cfc; color: white; padding: 10px 20px; border: none; border-radius: 5px;" type="submit" class="btn btn-primary">Guardar</button>
             </form>
             <br>
-            <form action="{{route('example.destroy', $ejemplo->id)}}" method="post">
+            <form action="{{route('solicitud.destroy', $solicitud->id)}}" method="post">
                 @csrf
                 @method('DELETE')
                 <p style="font-size: 25px;">Borrar Datos</p>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Id</span>
-                    <input type="text" class="form-control" id="id" name="id" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{$ejemplo->id}}"readonly></input>
+                    <input type="text" class="form-control" id="id" name="id" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{$solicitud->id}}"readonly></input>
                 </div>  
                 <button style="background-color:red; color: white; padding: 10px 20px; border: none; border-radius: 5px;" type="submit" class="btn btn-primary">Borrar</button>
             </form>
@@ -121,7 +121,7 @@
       <figure>
       <br>
       <blockquote class="blockquote">
-        <p>Mi primer proyecto de php.</p>
+        <p>Mi segundo proyecto de php.</p>
       </blockquote>
       <figcaption class="blockquote-footer">
         <cite title="Source Title">Copyright de Fer.</cite><br>
